@@ -3,20 +3,53 @@ Object {
   "child": Array [
     Object {
       "attr": Object {
-        "condensed": "",
-        "data": Array [
-          "[object",
-          "Object],[object",
-          "Object],[object",
-          "Object],[object",
-          "Object],[object",
-          "Object]",
+        "class": Array [
+          "uk-table",
+          "uk-table-striped",
+          "uk-table-condensed",
+          "uk-table-hover",
         ],
-        "hover": "",
-        "striped": "",
       },
+      "child": Array [
+        Object {
+          "child": Array [
+            Object {
+              "node": "element",
+              "tag": "tr",
+            },
+          ],
+          "node": "element",
+          "tag": "thead",
+        },
+        Object {
+          "child": Array [
+            Object {
+              "node": "element",
+              "tag": "tr",
+            },
+            Object {
+              "node": "element",
+              "tag": "tr",
+            },
+            Object {
+              "node": "element",
+              "tag": "tr",
+            },
+            Object {
+              "node": "element",
+              "tag": "tr",
+            },
+            Object {
+              "node": "element",
+              "tag": "tr",
+            },
+          ],
+          "node": "element",
+          "tag": "tbody",
+        },
+      ],
       "node": "element",
-      "tag": "vk-table",
+      "tag": "table",
     },
   ],
   "node": "root",

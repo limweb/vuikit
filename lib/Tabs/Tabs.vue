@@ -16,7 +16,6 @@
     </div>
     <transition :name="transition" mode="out-in">
       <div class="uk-margin" :key="activeTab">
-        <TabContent />
       </div>
     </transition>
   </div>
@@ -24,10 +23,14 @@
 
 <script>
 import core from './core'
+import tabcontent from './tabcontent'
 
 export default {
   name: 'VkTabs',
   extends: core,
+  components: {
+    tabcontent
+  },
   props: {
     // tabs width using UIkit grid
     width: {
