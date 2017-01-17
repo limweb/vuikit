@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import Component from 'src/ButtonCheckbox'
+import Component from 'lib/ButtonCheckbox'
 import mixin from './_mixin'
 import { mergeProps } from 'helpers/pages'
 

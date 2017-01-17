@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import Component from 'src/Button'
+import Component from 'lib/Button'
 import mixin from './_mixin'
 import { mergeProps } from 'helpers/pages'
 

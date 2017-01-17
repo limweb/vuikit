@@ -1,0 +1,975 @@
+exports[`Datepicker renders correctly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "child": Array [
+        Object {
+          "attr": Object {
+            "class": "uk-datepicker-nav",
+          },
+          "child": Array [
+            Object {
+              "attr": Object {
+                "class": "uk-datepicker-previous",
+              },
+              "node": "element",
+              "tag": "a",
+            },
+            Object {
+              "node": "text",
+              "text": "",
+            },
+            Object {
+              "attr": Object {
+                "class": "uk-datepicker-next",
+              },
+              "node": "element",
+              "tag": "a",
+            },
+            Object {
+              "node": "element",
+              "tag": "pickerheader",
+            },
+          ],
+          "node": "element",
+          "tag": "div",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-datepicker-table",
+          },
+          "child": Array [
+            Object {
+              "child": Array [
+                Object {
+                  "child": Array [
+                    Object {
+                      "child": Array [
+                        Object {
+                          "node": "text",
+                          "text": "Sun",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "th",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "node": "text",
+                          "text": "Mon",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "th",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "node": "text",
+                          "text": "Tue",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "th",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "node": "text",
+                          "text": "Wed",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "th",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "node": "text",
+                          "text": "Thu",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "th",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "node": "text",
+                          "text": "Fri",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "th",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "node": "text",
+                          "text": "Sat",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "th",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "tr",
+                },
+              ],
+              "node": "element",
+              "tag": "thead",
+            },
+            Object {
+              "child": Array [
+                Object {
+                  "child": Array [
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "uk-datepicker-table-muted",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "30",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "1",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "2",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "3",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "4",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "5",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "6",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "tr",
+                },
+                Object {
+                  "child": Array [
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "7",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "8",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "9",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "10",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "11",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "12",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "13",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "tr",
+                },
+                Object {
+                  "child": Array [
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "14",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "15",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "16",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "17",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "18",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "19",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "20",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "tr",
+                },
+                Object {
+                  "child": Array [
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "21",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "22",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "23",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "24",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "25",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "26",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "27",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "tr",
+                },
+                Object {
+                  "child": Array [
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "28",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "29",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "30",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "31",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "uk-datepicker-table-muted",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "1",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "uk-datepicker-table-muted",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "2",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "uk-datepicker-table-muted",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "3",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "tr",
+                },
+                Object {
+                  "child": Array [
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "uk-datepicker-table-muted",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "4",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "uk-datepicker-table-muted",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "5",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "uk-datepicker-table-muted",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "6",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "uk-datepicker-table-muted",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "7",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "uk-datepicker-table-muted",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "8",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "uk-datepicker-table-muted",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "9",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                    Object {
+                      "child": Array [
+                        Object {
+                          "attr": Object {
+                            "class": "uk-datepicker-table-muted",
+                          },
+                          "child": Array [
+                            Object {
+                              "node": "text",
+                              "text": "10",
+                            },
+                          ],
+                          "node": "element",
+                          "tag": "a",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "td",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "tr",
+                },
+              ],
+              "node": "element",
+              "tag": "tbody",
+            },
+          ],
+          "node": "element",
+          "tag": "table",
+        },
+      ],
+      "node": "element",
+      "tag": "div",
+    },
+  ],
+  "node": "root",
+}
+`;

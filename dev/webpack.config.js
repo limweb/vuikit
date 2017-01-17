@@ -9,8 +9,7 @@ module.exports = webpackMerge(baseWebpackConfig, {
   entry: {
     main: path.resolve(__dirname, './main.js')
   },
-  // eval-source-map is faster for development
-  devtool: '#eval-source-map',
+  devtool: 'eval',
   plugins: [
     new LodashModuleReplacementPlugin({
       'collections': true,

@@ -44,7 +44,7 @@
 
 <script>
 import { mergeProps } from 'helpers/pages'
-import Component from 'src/Pagination'
+import Component from 'lib/Pagination'
 import mixin from './_mixin'
 
 export default {

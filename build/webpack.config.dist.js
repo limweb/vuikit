@@ -10,14 +10,20 @@ const banner = `/*!
  * Released under the MIT License.
  */`
 
+const nodeEnv = process.env.NODE_ENV || 'production'
+
 const commonConfig = () => webpackMerge(baseWebpackConfig, {
   entry: {
-    'vuikit': './src'
+    'vuikit': './lib'
   },
   externals: {
     vue: 'vue'
   },
+  devtool: 'source-map',
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': { NODE_ENV: JSON.stringify(nodeEnv) }
+    }),
     // lodash optimizations
     new LodashModuleReplacementPlugin({
       'collections': true
@@ -34,22 +40,39 @@ const commonConfig = () => webpackMerge(baseWebpackConfig, {
 })
 
 module.exports = [
+  // default
+  webpackMerge(commonConfig(), {
+    output: {
+      path: 'dist',
+      filename: '[name].js',
+      chunkFilename: '[id].js'
+    }
+  }),
+  // minified
   webpackMerge(commonConfig(), {
     output: {
       path: 'dist',
       filename: '[name].min.js',
       chunkFilename: '[id].js'
     },
-    devtool: '#source-map',
     plugins: [
-      // http://vuejs.github.io/vue-loader/workflow/production.html
-      new webpack.DefinePlugin({
-        'process.env': '"production"'
-      }),
       // minify with dead-code elimination
       new webpack.optimize.UglifyJsPlugin({
-        sourceMap: true,
-        minimize: true // for compatibilith with older loaders
+        compress: {
+          warnings: false,
+          screw_ie8: true,
+          conditionals: true,
+          unused: true,
+          comparisons: true,
+          sequences: true,
+          dead_code: true,
+          evaluate: true,
+          if_return: true,
+          join_vars: true
+        },
+        output: {
+          comments: false
+        }
       })
     ]
   }),

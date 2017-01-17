@@ -1,0 +1,49 @@
+exports[`Table Column Default renders correctly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "data": Array [
+          "[object",
+          "Object],[object",
+          "Object],[object",
+          "Object],[object",
+          "Object],[object",
+          "Object]",
+        ],
+      },
+      "child": Array [
+        Object {
+          "attr": Object {
+            "cell": "name",
+            "header": "Name",
+          },
+          "node": "element",
+          "tag": "vk-table-column",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "cellclass": "myCellClass",
+            "headerclass": "myHeaderClass",
+          },
+          "child": Array [
+            Object {
+              "node": "element",
+              "tag": "vk-table-column",
+            },
+          ],
+          "node": "element",
+          "tag": "vk-table-column",
+        },
+      ],
+      "node": "element",
+      "tag": "vk-table",
+    },
+  ],
+  "node": "root",
+}
+`;

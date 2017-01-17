@@ -38,8 +38,8 @@
 </template>
 
 <script>
-import Table from 'src/Table'
-import Column from 'src/Table/columns/Default'
+import Table from 'lib/Table'
+import Column from 'lib/Table/columns/Default'
 import mixin from '../_mixin'
 import { mergeProps } from 'helpers/pages'
 
