@@ -37,8 +37,8 @@
 </template>
 
 <script>
-import Table from 'src/Table'
-import Column from 'src/Table/columns/Sort'
+import Table from 'lib/Table'
+import Column from 'lib/Table/columns/Sort'
 import mixin from '../_mixin'
 import { mergeProps } from 'helpers/pages'
 import { getFinalProps } from 'helpers/component'

@@ -1,0 +1,24 @@
+exports[`Table renders correctly 1`] = `
+Object {
+  "child": Array [
+    Object {
+      "attr": Object {
+        "condensed": "",
+        "data": Array [
+          "[object",
+          "Object],[object",
+          "Object],[object",
+          "Object],[object",
+          "Object],[object",
+          "Object]",
+        ],
+        "hover": "",
+        "striped": "",
+      },
+      "node": "element",
+      "tag": "vk-table",
+    },
+  ],
+  "node": "root",
+}
+`;

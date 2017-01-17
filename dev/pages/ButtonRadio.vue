@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import Component from 'src/ButtonRadio'
+import Component from 'lib/ButtonRadio'
 import mixin from './_mixin'
 import { mergeProps } from 'helpers/pages'
 
