@@ -13,6 +13,9 @@ module.exports = {
     filename: '[name].js'
   },
   resolve: {
+    modules: [
+      path.resolve(__dirname, '../node_modules')
+    ],
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'lib': path.resolve(__dirname, '../lib'),
@@ -47,7 +50,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        use: 'url-loader',
+        loader: 'url-loader',
         query: {
           limit: 10000,
           name: utils.assetsPath('img/[name].[hash:7].[ext]')

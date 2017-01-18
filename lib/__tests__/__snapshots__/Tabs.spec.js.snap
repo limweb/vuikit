@@ -107,15 +107,13 @@ Object {
           "tag": "div",
         },
         Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
           "attr": Object {
             "class": "uk-margin",
           },
-          "child": Array [
-            Object {
-              "node": "element",
-              "tag": "tabcontent",
-            },
-          ],
           "node": "element",
           "tag": "div",
         },
@@ -133,25 +131,73 @@ Object {
   "child": Array [
     Object {
       "attr": Object {
-        "activetab": "1",
-        "contentwidth": "1-2",
-        "flip": "",
-        "width": "1-1",
+        "class": Array [
+          "uk-grid",
+          "uk-flex",
+          "uk-flex-row-reverse",
+        ],
       },
       "child": Array [
         Object {
+          "attr": Object {
+            "class": "uk-width-medium-1-1",
+          },
           "child": Array [
             Object {
-              "node": "text",
-              "text": "ContentTab1",
+              "attr": Object {
+                "class": Array [
+                  "uk-tab",
+                  "uk-tab-right",
+                ],
+              },
+              "child": Array [
+                Object {
+                  "attr": Object {
+                    "class": "uk-active",
+                  },
+                  "child": Array [
+                    Object {
+                      "child": Array [
+                        Object {
+                          "node": "text",
+                          "text": "",
+                        },
+                      ],
+                      "node": "element",
+                      "tag": "a",
+                    },
+                  ],
+                  "node": "element",
+                  "tag": "li",
+                },
+              ],
+              "node": "element",
+              "tag": "ul",
             },
           ],
           "node": "element",
-          "tag": "vk-tab",
+          "tag": "div",
+        },
+        Object {
+          "node": "text",
+          "text": "",
+        },
+        Object {
+          "attr": Object {
+            "class": "uk-width-medium-1-2",
+          },
+          "child": Array [
+            Object {
+              "node": "element",
+              "tag": "div",
+            },
+          ],
+          "node": "element",
+          "tag": "div",
         },
       ],
       "node": "element",
-      "tag": "vk-tabs-vertical",
+      "tag": "div",
     },
   ],
   "node": "root",

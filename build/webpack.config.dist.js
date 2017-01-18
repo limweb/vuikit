@@ -1,6 +1,6 @@
 const webpack = require('webpack')
 const webpackMerge = require('webpack-merge')
-const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
+// const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
 const baseWebpackConfig = require('./webpack.config.base')
 const FriendlyErrors = require('friendly-errors-webpack-plugin')
 const version = require('../package.json').version
@@ -24,10 +24,10 @@ const commonConfig = () => webpackMerge(baseWebpackConfig, {
     new webpack.DefinePlugin({
       'process.env': { NODE_ENV: JSON.stringify(nodeEnv) }
     }),
-    // lodash optimizations
-    new LodashModuleReplacementPlugin({
-      'collections': true
-    }),
+    // // lodash optimizations
+    // new LodashModuleReplacementPlugin({
+    //   'collections': true
+    // }),
     // add banner on top of each file
     new webpack.BannerPlugin({
       banner,
@@ -43,7 +43,7 @@ module.exports = [
   // default
   webpackMerge(commonConfig(), {
     output: {
-      path: 'dist',
+      path: 'distwp',
       filename: '[name].js',
       chunkFilename: '[id].js'
     }
@@ -51,12 +51,15 @@ module.exports = [
   // minified
   webpackMerge(commonConfig(), {
     output: {
-      path: 'dist',
+      path: 'distwp',
       filename: '[name].min.js',
       chunkFilename: '[id].js'
     },
     plugins: [
-      // minify with dead-code elimination
+      new webpack.LoaderOptionsPlugin({
+        minimize: true,
+        debug: false
+      }),
       new webpack.optimize.UglifyJsPlugin({
         compress: {
           warnings: false,
@@ -79,7 +82,7 @@ module.exports = [
   // dist common
   webpackMerge(commonConfig(), {
     output: {
-      path: 'dist',
+      path: 'distwp',
       filename: '[name].common.js',
       chunkFilename: '[id].common.js',
       library: 'Vuikit',
