@@ -9,30 +9,15 @@ export default [
     component: require('./pages/Button')
   },
   {
-    name: 'Button Checkbox',
-    path: '/button-checkbox',
-    component: require('./pages/ButtonCheckbox')
-  },
-  {
-    name: 'Button Radio',
-    path: '/button-radio',
-    component: require('./pages/ButtonRadio')
-  },
-  {
     name: 'Breadcrumb',
     path: '/breadcrumb',
     component: require('./pages/Breadcrumb')
   },
+  {
+    name: 'Tabs',
+    path: '/tabs',
+    component: require('./pages/Tabs')
   }
-  // // NAVIGATION
-  // {
-  //   name: 'Tabs',
-  //   path: '/tabs',
-  //   component: require('./pages/Tabs'),
-  //   meta: {
-  //     section: 'Navigation'
-  //   }
-  // },
   // {
   //   name: 'Subnav',
   //   path: '/subnav',
@@ -45,14 +30,6 @@ export default [
   //   name: 'Pagination',
   //   path: '/pagination',
   //   component: require('./pages/Pagination'),
-  //   meta: {
-  //     section: 'Navigation'
-  //   }
-  // },
-  // {
-  //   name: 'Breadcrumb',
-  //   path: '/breadcrumb',
-  //   component: require('./pages/Breadcrumb'),
   //   meta: {
   //     section: 'Navigation'
   //   }
