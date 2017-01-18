@@ -17,6 +17,12 @@ export default [
     name: 'Button Radio',
     path: '/button-radio',
     component: require('./pages/ButtonRadio')
+  },
+  {
+    name: 'Breadcrumb',
+    path: '/breadcrumb',
+    component: require('./pages/Breadcrumb')
+  },
   }
   // // NAVIGATION
   // {
