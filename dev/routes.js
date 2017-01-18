@@ -12,15 +12,12 @@ export default [
     name: 'Button Checkbox',
     path: '/button-checkbox',
     component: require('./pages/ButtonCheckbox')
+  },
+  {
+    name: 'Button Radio',
+    path: '/button-radio',
+    component: require('./pages/ButtonRadio')
   }
-  // {
-  //   name: 'ButtonRadio',
-  //   path: '/button-radio',
-  //   component: require('./pages/ButtonRadio'),
-  //   meta: {
-  //     section: 'Common'
-  //   }
-  // },
   // // NAVIGATION
   // {
   //   name: 'Tabs',

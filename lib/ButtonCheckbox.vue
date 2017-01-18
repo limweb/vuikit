@@ -19,7 +19,7 @@ export default {
     },
     group: {
       type: Boolean,
-      default: true
+      default: false
     }
   },
   beforeMount () {

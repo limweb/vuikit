@@ -4,9 +4,7 @@
     :disabled="disabled"
     :class="{
       'uk-active': active,
-      [`uk-button-${color}`]: color,
-      [`uk-button-${size}`]: size,
-      [`uk-width-${width}`]: width
+      'uk-button-default': !hasCustomStyle
     }"
     @click="e => $emit('click', e)">
     <slot></slot>
@@ -29,18 +27,12 @@ export default {
     disabled: {
       type: Boolean,
       default: false
-    },
-    color: {
-      type: String,
-      default: ''
-    },
-    size: {
-      type: String,
-      default: ''
-    },
-    width: {
-      type: String,
-      default: ''
+    }
+  },
+  computed: {
+    hasCustomStyle () {
+      const classes = this.$options._parentVnode.data.staticClass
+      return classes && classes.match(/uk-button-(primary|secondary|danger|text|link)/)
     }
   }
 }
