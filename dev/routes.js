@@ -17,15 +17,12 @@ export default [
     name: 'Tabs',
     path: '/tabs',
     component: require('./pages/Tabs')
+  },
+  {
+    name: 'Subnav',
+    path: '/subnav',
+    component: require('./pages/Subnav')
   }
-  // {
-  //   name: 'Subnav',
-  //   path: '/subnav',
-  //   component: require('./pages/Subnav'),
-  //   meta: {
-  //     section: 'Navigation'
-  //   }
-  // },
   // {
   //   name: 'Pagination',
   //   path: '/pagination',
