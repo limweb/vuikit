@@ -22,15 +22,12 @@ export default [
     name: 'Subnav',
     path: '/subnav',
     component: require('./pages/Subnav')
+  },
+  {
+    name: 'Pagination',
+    path: '/pagination',
+    component: require('./pages/Pagination')
   }
-  // {
-  //   name: 'Pagination',
-  //   path: '/pagination',
-  //   component: require('./pages/Pagination'),
-  //   meta: {
-  //     section: 'Navigation'
-  //   }
-  // },
   // // DATA
   // {
   //   name: 'Table',
