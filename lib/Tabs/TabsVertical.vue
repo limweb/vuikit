@@ -1,18 +1,19 @@
 <template>
   <div class="uk-grid" :class="{
-    'uk-flex uk-flex-row-reverse': flip
+    'uk-flex uk-flex-row-reverse': alignment === 'right'
   }">
-    <div :class="`uk-width-medium-${width}`">
-      <ul class="uk-tab" :class="[flip
+    <div class="uk-width-auto">
+      <ul class="uk-tab" :class="[alignment === 'right'
         ? 'uk-tab-right'
         : 'uk-tab-left'
       ]">
         <slot />
       </ul>
     </div>
-    <div :class="`uk-width-medium-${contentWidth}`">
+    <div class="uk-width-expand">
       <transition :name="transition" mode="out-in">
         <div :key="activeTab">
+          <tabcontent />
         </div>
       </transition>
     </div>
@@ -21,23 +22,14 @@
 
 <script>
 import core from './core'
-import tabcontent from './tabcontent'
 
 export default {
   name: 'VkTabsVertical',
   extends: core,
-  components: {
-    tabcontent
-  },
   props: {
-    // tabs width using UIkit grid
-    width: {
+    alignment: {
       type: String,
-      default: ''
-    },
-    contentWidth: {
-      type: String,
-      default: '2-3'
+      default: 'left' // left|right
     }
   }
 }
