@@ -24,7 +24,7 @@ module.exports = webpackMerge(baseWebpackConfig, {
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: path.resolve(__dirname, './index.html'),
+      template: path.resolve(__dirname, './server/index.tmpl.ejs'),
       env: '"production"',
       inject: true
     })
@@ -33,5 +33,5 @@ module.exports = webpackMerge(baseWebpackConfig, {
 
 // add hot-reload related code to entry chunks
 Object.keys(module.exports.entry).forEach(function (name) {
-  module.exports.entry[name] = ['./dev/client'].concat(module.exports.entry[name])
+  module.exports.entry[name] = ['./dev/server/client'].concat(module.exports.entry[name])
 })

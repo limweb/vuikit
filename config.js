@@ -1,10 +1,10 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
-var version = require('../package.json').version
+var version = require('./package.json').version
 
 module.exports = {
   build: {
-    env: require('./prod.env'),
+    env: 'production',
     index: path.resolve(__dirname, '../docs/index.html'),
     assetsRoot: path.resolve(__dirname, '../docs'),
     distRoot: path.resolve(__dirname, '../dist'),
@@ -25,7 +25,7 @@ module.exports = {
       ' */'
   },
   dev: {
-    env: require('./dev.env'),
+    env: 'development',
     port: 8085,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
