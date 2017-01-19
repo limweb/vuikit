@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import { each } from '../helpers/util'
-import { filterByTag, getProps } from '../helpers/component'
+import { each } from 'helpers/util'
+import { filterByTag, getProps } from 'helpers/component'
 
 export default {
   name: 'VkButtonRadio',
