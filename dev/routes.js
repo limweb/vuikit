@@ -32,15 +32,12 @@ export default [
     name: 'Table',
     path: '/table',
     component: require('./pages/Table')
+  },
+  {
+    name: 'Datepicker',
+    path: '/datepicker',
+    component: require('./pages/Datepicker')
   }
-  // {
-  //   name: 'Datepicker',
-  //   path: '/datepicker',
-  //   component: require('./pages/Datepicker'),
-  //   meta: {
-  //     section: 'Data'
-  //   }
-  // },
   // // DISPLAY
   // {
   //   name: 'Modal',
