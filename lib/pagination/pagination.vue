@@ -74,7 +74,7 @@ export default {
     // warn about missing props if 'vk-pagination-pages' is missing
     const activeEl = this.$el.querySelector('li.uk-active')
     if (warn && !activeEl && (!this.limit || !this.active || !this.total)) {
-      warn('VkPagination', `the 'limit', 'active' and 'total' props must be set if 'vk-pagination-pages' is omited`)
+      warn(`[VkPagination warn]: the 'limit', 'active' and 'total' props must be set if 'vk-pagination-pages' is omited`)
     }
   },
   methods: {

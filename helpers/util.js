@@ -135,12 +135,9 @@ let warn
 
 if (process.env.NODE_ENV !== 'production') {
   const hasConsole = typeof console !== 'undefined'
-  warn = (name, msg) => {
+  warn = (msg) => {
     if (hasConsole) {
-      console.error(msg === undefined
-        ? `[Vuikit]: ${msg}`
-        : `[${name} warn]: ${msg}`
-      )
+      console.error(msg)
     }
   }
 }
