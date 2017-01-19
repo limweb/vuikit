@@ -27,16 +27,12 @@ export default [
     name: 'Pagination',
     path: '/pagination',
     component: require('./pages/Pagination')
+  },
+  {
+    name: 'Table',
+    path: '/table',
+    component: require('./pages/Table')
   }
-  // // DATA
-  // {
-  //   name: 'Table',
-  //   path: '/table',
-  //   component: require('./pages/Table'),
-  //   meta: {
-  //     section: 'Data'
-  //   }
-  // },
   // {
   //   name: 'Datepicker',
   //   path: '/datepicker',
