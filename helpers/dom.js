@@ -16,7 +16,15 @@ export function offAll (namespace = 'def') {
   }
 }
 
-export function addClass (el, className) {
+export function hasClass (el, className) {
+  return el.classList.contains(className)
+}
+
+export function addClass (el, classes) {
+  return classes.split(' ').forEach(className => _addClass(el, className))
+}
+
+const _addClass = function (el, className) {
   if (el.classList) {
     el.classList.add(className)
   } else {
@@ -25,11 +33,11 @@ export function addClass (el, className) {
   }
 }
 
-export function hasClass (el, className) {
-  return el.classList.contains(className)
+export function removeClass (el, classes) {
+  return classes.split(' ').forEach(className => _removeClass(el, className))
 }
 
-export function removeClass (el, className) {
+const _removeClass = function (el, className) {
   if (el.classList) {
     el.classList.remove(className)
   } else {

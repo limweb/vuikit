@@ -1,26 +1,25 @@
 <template>
   <transition
-    :css="transition ? true : false"
-    :name="transition ? transition : ''"
+    enter-to-class="uk-open"
+    leave-class="uk-open"
     @beforeEnter="beforeEnter"
     @afterEnter="afterEnter"
     @afterLeave="afterLeave">
     <div class="uk-modal"
       v-show="show"
-      style="display: block;">
-      <div ref="dialog" class="uk-modal-dialog" :class="{
-        'uk-modal-dialog-large': large,
-        'uk-modal-dialog-lightbox': lightbox,
-        'uk-modal-dialog-blank': blank
+      style="display: block;"
+      :class="{
+        'uk-modal-lightbox': lightbox,
+        'uk-modal-container': container,
+        'uk-modal-full': full
       }">
-        <slot></slot>
-      </div>
+        <vk-modal-content />
     </div>
   </transition>
 </template>
 
 <script>
-import { on, offAll, addClass, removeClass, css } from '../helpers/dom'
+import { on, offAll, hasClass, addClass, removeClass, css } from 'helpers/dom'
 import debounce from 'lodash-es/debounce'
 
 const html = document.documentElement
@@ -52,6 +51,16 @@ on(document, 'keyup', e => {
 
 export default {
   name: 'VkModal',
+  components: {
+    'vk-modal-content': {
+      functional: true,
+      render (h, { parent: vm }) {
+        return vm.dialogIsOverriden
+          ? vm.$slots.default
+          : h('vk-modal-dialog', vm.$slots.default)
+      }
+    }
+  },
   props: {
     show: {
       type: Boolean,
@@ -61,7 +70,7 @@ export default {
       type: Boolean,
       default: false
     },
-    large: {
+    container: {
       type: Boolean,
       default: false
     },
@@ -69,19 +78,55 @@ export default {
       type: Boolean,
       default: false
     },
-    blank: {
+    full: {
       type: Boolean,
       default: false
     },
-    transition: {
-      type: [String, Boolean],
-      default: 'vk-modal-transition'
+    blank: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    dialogIsOverriden () {
+      // if dialog is passed as slot is considered overriden
+      return this.$slots.default[0] && this.$slots.default[0].data.staticClass === 'uk-modal-dialog'
     }
   },
   mounted () {
+    // set refs programatically
+    this.$refs.dialog = this.$el.querySelector('.uk-modal-dialog')
+    this.$refs.close = this.$el.querySelector('button.uk-close')
+
+    // place close-top outside the dialog
+    if (hasClass(this.$refs.close, 'vk-modal-close-top')) {
+      removeClass(this.$refs.close, 'vk-modal-close-top')
+      const bar = document.createElement('div')
+      addClass(bar, 'uk-modal-bar')
+      addClass(bar, 'uk-position-top')
+      bar.appendChild(this.$refs.close)
+      this.$el.appendChild(bar)
+    }
+
+    // place caption bottom outside the dialog
+    const caption = this.$el.querySelector('.vk-modal-caption-bottom')
+    if (caption) {
+      addClass(caption, 'uk-modal-bar')
+      addClass(caption, 'uk-position-bottom')
+      removeClass(caption, 'vk-modal-caption-bottom')
+      this.$el.appendChild(caption)
+    }
+
+    // update close style if full
+    if (this.full) {
+      removeClass(this.$refs.close, 'uk-modal-close-default')
+      addClass(this.$refs.close, 'uk-modal-close-full')
+    }
+
     // init events
     const clickHandler = event => {
       const dialog = this.$refs.dialog
+
       // click in/out modal dialog
       if (event.target === dialog || dialog.contains(event.target)) {
         this.$emit('clickIn', event)
@@ -118,6 +163,7 @@ export default {
       })
     },
     afterEnter () {
+      addClass(this.$el, 'uk-open')
       // if any previous modal active
       // emit event for further actions
       if (active) {
@@ -139,26 +185,21 @@ export default {
       }
     },
     resize () {
-      const bodyWidth = body.offsetWidth
-      const dialog = this.$refs.dialog
-      const scrollbarWidth = window.innerWidth - bodyWidth
-      body.style[paddingDir] = scrollbarWidth
-      this.$el.style['overflow-y'] = scrollbarWidth
-        ? 'scroll'
-        : 'auto'
-      if (this.center) {
+      if (css(this.$el, 'display') === 'block' && this.center) {
+        removeClass(this.$el, 'uk-flex uk-flex-center uk-flex-middle')
+
+        const dialog = this.$refs.dialog
         const dh = dialog.offsetHeight
         const marginTop = css(dialog, 'margin-top')
         const marginBottom = css(dialog, 'margin-bottom')
         const pad = parseInt(marginTop, 10) + parseInt(marginBottom, 10)
-        if ((dh + pad) < window.innerHeight) {
-          const top = (window.innerHeight / 2 - dh / 2) - pad
-          dialog.style.top = `${top}px`
+
+        if (window.innerHeight > (dh + pad)) {
+          addClass(this.$el, 'uk-flex uk-flex-center uk-flex-middle')
         } else {
-          dialog.style.top = ''
+          removeClass(this.$el, 'uk-flex uk-flex-center uk-flex-middle')
         }
-      } else {
-        dialog.style.top = ''
+        this.$el.style.display = hasClass(this.$el, 'uk-flex') ? '' : 'block'
       }
     }
   }

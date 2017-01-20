@@ -37,16 +37,12 @@ export default [
     name: 'Datepicker',
     path: '/datepicker',
     component: require('./pages/Datepicker')
+  },
+  {
+    name: 'Modal',
+    path: '/modal',
+    component: require('./pages/Modal')
   }
-  // // DISPLAY
-  // {
-  //   name: 'Modal',
-  //   path: '/modal',
-  //   component: require('./pages/Modal'),
-  //   meta: {
-  //     section: 'Display'
-  //   }
-  // },
   // {
   //   name: 'Offcanvas',
   //   path: '/offcanvas',
